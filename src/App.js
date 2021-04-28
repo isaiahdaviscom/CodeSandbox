@@ -1,12 +1,14 @@
 // Modules
-import React, { useEffect, useState } from "react";
-import { getPokemonList, getPokemonDescription } from "../api/utils";
+// import React, { useEffect, useState } from "react";
+// import { getPokemonList, getPokemonDescription } from "../api/utils";
 // Styles
 import "../styles/styles.css";
 // Components
 import Select from "../components/Select";
 import Card from "../components/Card";
 import Button from "../components/Button";
+// State Changes
+
 // Init
 function App() {
   return (
