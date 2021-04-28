@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+.app {
+  background-color: #bbe6e4;
+  padding: 10px;
+  font: Roboto;
+  color: black;
+  font-size: 18px;
+}
+
+select {
+  height: 50px;
+  text-align: center;
+  margin-left: 20px;
+  border: 1px;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  background-color: #7d70ba;
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding: 10px;
+}
+
+button:disabled {
+  opacity: 0.8;
+  cursor: unset;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 40px 10px 60px;
+  /* drop shadow: 4px veritcal offset, 12px blur, black @ 20% opacity */
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  background-color: #bbe6e4;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 120%;
+}
