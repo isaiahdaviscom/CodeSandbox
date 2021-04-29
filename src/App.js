@@ -16,7 +16,10 @@ function App() {
   // State Changes
   const [state, setState] = useState([]);
   useEffect(() => {
-
+    async function fetchData() {
+      const data = getPokemonList();
+    }
+    fetchData();
   });
   // Render
   return (
