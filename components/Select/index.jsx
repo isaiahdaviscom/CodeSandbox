@@ -33,8 +33,7 @@ const SelectEl = styled.select`
 `;
 
 export default function Select(props) {
-  console.log('----')
-  console.log(props.options());
+
   return (
     <Wrapper>
       <SelectEl {...props}>

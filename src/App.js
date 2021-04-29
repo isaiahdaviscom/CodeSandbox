@@ -14,17 +14,11 @@ import Button from "../components/Button";
 // Init
 function App() {
   // State Changes
-  const [state, setState] = useState([]);
-  useEffect(() => {
-    async function fetchData() {
-      const data = getPokemonList();
-    }
-    fetchData();
-  });
+
   // Render
   return (
     <div className="app">
-      <Select options={getPokemonList} />
+      <Select />
       <Card />
       <div className="controls">
         <Button className="prev" onChange />
