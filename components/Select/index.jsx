@@ -33,9 +33,17 @@ const SelectEl = styled.select`
 `;
 
 export default function Select(props) {
+  console.log('----')
+  console.log(props.options());
   return (
     <Wrapper>
-      <SelectEl {...props} />
+      <SelectEl {...props}>
+        <option>a</option>
+        <option>b</option>
+        <option>c</option>
+        <option>d</option>
+        <option>e</option>
+      </SelectEl>
     </Wrapper>
   );
 }

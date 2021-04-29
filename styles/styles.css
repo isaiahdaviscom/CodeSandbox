@@ -23,7 +23,12 @@ ol {
   color: black;
   font-size: 18px;
 }
-
+select,
+button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
 select {
   height: 50px;
   text-align: center;
@@ -37,9 +42,6 @@ button {
   background-color: #7d70ba;
   color: #ffffff;
   border-radius: 6px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -49,6 +51,13 @@ button {
 button:disabled {
   opacity: 0.8;
   cursor: unset;
+}
+
+button.prev {
+  left: 0;
+}
+button.next {
+  right: 0;
 }
 
 .card {

@@ -15,19 +15,21 @@ export async function getPokemonList() {
 }
 
 /**
- * @returns {string} Short description of Pokemon
+ * @id {number}       Specific pokemons identifier
+ * @returns {string}  Short description of Pokemon
  */
-export async function getPokemonDescription() {
+export async function getPokemonDescription(id) {
   const pokemon = await fetch(
-    `https://pokeapi.co/api/v2/pokemon-species/1`
+    `https://pokeapi.co/api/v2/pokemon-species/${id}`
   ).then((res) => res.json());
 
   return pokemon.flavor_text_entries[0].flavor_text.replace(/[\n\f]/g, " ");
 }
 
 /**
- * Returns URL of a Pokemon sprite image
+ * @id {number}       Specific pokemons identifier
+ * @return {string}   URL of a Pokemon sprite image
  */
-export function getPokemonSpriteUrl(idx) {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${idx}.png`;
+export function getPokemonSpriteUrl(id) {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`;
 }
