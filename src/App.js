@@ -16,12 +16,7 @@ function App() {
   // State Changes
   const [state, setState] = useState([]);
   useEffect(() => {
-    async function LogData() {
-      // setState =(getPokemonList());
-      bArr(getPokemonDescription(0));
-      cArr(getPokemonSpriteUrl(1));
-    }
-    LogData();
+
   });
   // Render
   return (
