@@ -11,6 +11,7 @@ import Button from "../components/Button";
 function App() {
   // State Changes
   const [pokemonList, setPokemonList] = useState([]);
+  const [pokemonIndex, setPokemonIndex] = useState(null)
   // Side Effect
   useEffect(() => {
     async function fetchData() {
@@ -27,11 +28,13 @@ function App() {
         options={pokemonList}
         onChange={(e) => {
           console.log(e.target);
+          setPokemonIndex(e.target.value);
         }}
       />
-      <Card props={{imgURL:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png', title:'bulbasaur', desc:''}}/>
+      {pokemonIndex}
+      <Card props={{id: pokemonIndex, imgURL:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png', title:'bulbasaur', desc:''}}/>
       <div className="controls">
-        <Button className="prev" onChange />
+        <Button className="prev" onClick={(e)=>{console.log(e)}} />
         <Button className="next" onChange />
       </div>
     </div>
