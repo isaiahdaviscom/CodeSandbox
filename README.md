@@ -21,7 +21,8 @@ I looked over the code for an unfamiliar frameworks and discovered that the Card
 The Research
 Believing that this was intentional I opened another browser I opened a tab using the context clues in the code to reference later.
 
-
+Logging
+[6:39] After looking at the the utilities api requests I've been wondering if there is a better way a way to couple the response from the api calls into a single response 
 
 Quickly I built out the component folder structure and worked on getting the essential elements on the page.
 
