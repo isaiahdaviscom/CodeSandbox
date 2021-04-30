@@ -1,5 +1,10 @@
 import styled from "styled-components";
-
+/**
+ * TODO
+ * Attribute
+ * Add select attribute to selected option html tag
+ * Event
+ */
 const Wrapper = styled.div`
   position: relative;
 
@@ -33,15 +38,14 @@ const SelectEl = styled.select`
 `;
 
 export default function Select(props) {
+  const options = props.options;
 
   return (
     <Wrapper>
       <SelectEl {...props}>
-        <option>a</option>
-        <option>b</option>
-        <option>c</option>
-        <option>d</option>
-        <option>e</option>
+        {options.map((el, i) => {
+          return <option label={el.name} value={i}>{el.name}</option>;
+        })}
       </SelectEl>
     </Wrapper>
   );
